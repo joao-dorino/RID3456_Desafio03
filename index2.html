@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board de Tarefas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-2">
+    
+    <main>
+        <div class="titulo">
+            <h1>Board de tarefas</h1>
+        </div>
+
+        <section id="create-todo-section">
+            <form id="create-todo-form">
+                <input
+                    type="text"
+                    id="description"
+                    name="description"
+                    class="input-description"
+                    aria-label="Nome da tarefa"
+                    placeholder="Nome da tarefa">
+
+                    <input
+                    type="text"
+                    id="description-2"
+                    name="description-2"
+                    class="input-description"
+                    aria-label="Etiqueta"
+                    placeholder="Etiqueta">
+
+                <button type="submit" id="save-task" aria-label="Cadastrar tarefa" class="add-task-btn"> + </button>
+            </form>
+        </section>
+
+        <section class="todo-list-section">
+            <div class="tasks" id="tasks-container"></div>
+        </section>
+
+        <hr>
+
+        <footer id="footer">
+            <p><span id="completed-count">0</span> tarefa(s) concuída(s)</p>
+            <button id="remove-completed" class="remove-btn">Remover concluídas</button>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
